@@ -29,6 +29,8 @@ set colorcolumn=80
 colorscheme onedark
 map <silent> <C-n> :NERDTreeFocus<CR>
 
+let mapleader = ','
+let g:user_emmet_leader_key=','
 let g:coc_global_extensions = [
     \ 'coc-tsserver',
     \ 'coc-json',
