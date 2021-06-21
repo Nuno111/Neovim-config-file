@@ -10,6 +10,10 @@ Plug 'yuezk/vim-js'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'tpope/vim-commentary'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+Plug 'morhetz/gruvbox'
+Plug 'MaskRay/ccls'
+Plug 'ryanoasis/vim-devicons'
+Plug 'sheerun/vim-polyglot'
 
 call plug#end()
 
@@ -26,7 +30,7 @@ set scrolloff=8
 set ignorecase
 set signcolumn
 set colorcolumn=80
-colorscheme onedark
+colorscheme gruvbox
 map <silent> <C-n> :NERDTreeFocus<CR>
 
 let mapleader = ','
@@ -38,5 +42,5 @@ let g:coc_global_extensions = [
     \ 'coc-css',
     \ 'coc-python',
 	\ 'coc-diagnostic',
-	\ 'coc-eslint',
+	\ 'coc-eslint'
     \]
