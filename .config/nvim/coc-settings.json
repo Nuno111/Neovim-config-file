@@ -1,0 +1,4 @@
+{
+	"eslint.alwaysShowStatus":true,
+	"coc.preferences.formatOnSaveFiletypes":["html", "css", "markdown", "javascript", "javascriptreact", "json"]
+}
