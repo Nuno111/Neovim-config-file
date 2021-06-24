@@ -15,6 +15,7 @@ set signcolumn
 set colorcolumn=80
 set termguicolors
 set nohlsearch
+set lcs=tab:\|\  " the last character is space!
 
 let mapleader = ','
 let g:user_emmet_leader_key=','
@@ -22,6 +23,9 @@ let g:dracula_italic = 0
 let g:polyglot_disabled = ["autoindent"]
 let g:prettier#config#tab_width = 4
 let g:prettier#config#use_tabs = 'true'
+let g:prettier#autoformat = 1
+let g:prettier#autoformat_require_pragma = 0
+
 autocmd Filetype json
   \ let g:indentLine_setConceal = 0 |
   \ let g:vim_json_syntax_conceal = 0
@@ -37,6 +41,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'dracula/vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'prettier/vim-prettier', { 'do': 'npm install' }
+Plug 'AndrewRadev/tagalong.vim'
 
 let g:coc_global_extensions = [
 	\ 'coc-json',
