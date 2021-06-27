@@ -1,3 +1,4 @@
+set list lcs=tab:\|\ " the last character is space!
 set relativenumber
 set hidden
 set noerrorbells
@@ -15,7 +16,6 @@ set signcolumn
 set colorcolumn=80
 set termguicolors
 set nohlsearch
-set lcs=tab:\|\  " the last character is space!
 
 let mapleader = ','
 let g:user_emmet_leader_key=','
