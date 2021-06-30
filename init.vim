@@ -25,6 +25,7 @@ let g:prettier#config#tab_width = 4
 let g:prettier#config#use_tabs = 'true'
 let g:prettier#autoformat = 1
 let g:prettier#autoformat_require_pragma = 0
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
 autocmd Filetype json
   \ let g:indentLine_setConceal = 0 |
