@@ -1,4 +1,5 @@
 set list lcs=tab:\|\ " the last character is space!
+set clipboard+=unnamedplus
 set relativenumber
 set hidden
 set noerrorbells
@@ -26,6 +27,14 @@ let g:prettier#config#use_tabs = 'true'
 let g:prettier#autoformat = 1
 let g:prettier#autoformat_require_pragma = 0
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+" WSL yank support
+let s:clip = '/mnt/c/Windows/System32/clip.exe'  " change this path according to your mount point
+if executable(s:clip)
+    augroup WSLYank
+        autocmd!
+		autocmd TextYankPost * if v:event.operator ==# 'y' | call system('cat |' . s:clip, @0) | endif
+    augroup END
+endif
 
 autocmd Filetype json
   \ let g:indentLine_setConceal = 0 |
