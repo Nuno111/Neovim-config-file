@@ -1,12 +1,11 @@
 set list lcs=tab:\|\ " the last character is space!
-set clipboard+=unnamedplus
 set relativenumber
 set hidden
 set noerrorbells
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
-set noexpandtab
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set expandtab
 set smartindent
 set autoindent
 set incsearch
@@ -22,8 +21,6 @@ let mapleader = ','
 let g:user_emmet_leader_key=','
 let g:dracula_italic = 0
 let g:polyglot_disabled = ["autoindent"]
-let g:prettier#config#tab_width = 4
-let g:prettier#config#use_tabs = 'true'
 let g:prettier#autoformat = 1
 let g:prettier#autoformat_require_pragma = 0
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
